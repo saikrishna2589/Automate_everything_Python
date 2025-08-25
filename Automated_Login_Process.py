@@ -81,11 +81,12 @@ print(f"{save_file(temp)}")
 #schedule every 2 seconds the run. saves each data point in text file .each text file name-currentdatetime
 #(2025-08-21.13.50.59.txt)
 
+get_driver()
+login()
+
 try:
     while True:
         time.sleep(2)
-        driver_call = get_driver()
-        login()
         save_file(extract_info())
 
 except KeyboardInterrupt:
