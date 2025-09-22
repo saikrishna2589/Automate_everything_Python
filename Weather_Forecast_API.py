@@ -38,7 +38,7 @@ json_temp_data = weather_extract_info(city_name,openweather_api_key)
 temp_data =[] #empty list to store dictionary of temp values
 
 list_of_dict= json_temp_data['list']
-
+print(list_of_dict)
 #print('length')
 #print('list : ', json_temp_data['list'])
 
